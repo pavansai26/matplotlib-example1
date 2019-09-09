@@ -1,0 +1,25 @@
+t=np.arange(0.0,5.0,0.01)
+s=np.cos(2*np.pi*t)
+plt.plot(t,s,lw=2)
+plt.annotate('localmax'xy=(2,1),xytext=(3,1.5),arrowprops=dict(facecolor='black')
+plt.show()
+
+hatches example
+
+bars=plt.bar([1,2,3,4],[10,12,15,17])
+plt.setp(bars[0],hatch='x',facecolor='w')
+plt.setp(bars[1],hatch='xx',facecolor='orange')
+plt.show()
+
+transformation tutorial
+
+import matplotlib as mpl
+print(matplotlib.matplotlib_frame())
+import matplotlib.pyplot as plt
+mpl.rcdefaults()
+fig,(ax1,ax2)=plt.subplots(1,2)
+ax1.plot([1,2,3,4])
+mpl.rc('lines',lw=2,ls='-.')
+ax2.plot([1,2,3,4])
+plt.show()
+
